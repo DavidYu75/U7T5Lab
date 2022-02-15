@@ -7,8 +7,14 @@ public class Search {
     // should be accepted as parameters); return -1 if target is not found
     // BE SURE TO USE EARLY RETURN (more efficient)
 
-
-
+    public static int linearSearch(int target, int[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
     // B. write a second static method that has the same parameters as linearSearch but
@@ -16,7 +22,14 @@ public class Search {
     // if target is not found
     // AGAIN, BE SURE TO USE EARLY RETURN
 
-
+    public static boolean linearSearch2(int target, int[] intArray) {
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] == target) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 
@@ -25,7 +38,14 @@ public class Search {
     // at which the target is found, or return -1 if target is not found
     // BE SURE TO USE EARLY RETURN
 
-
+    public static int linearSearch(ArrayList<Integer> numArray, int target) {
+        for (int i = 0; i < numArray.size(); i++) {
+            if (numArray.get(i) == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 

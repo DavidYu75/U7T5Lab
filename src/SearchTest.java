@@ -8,21 +8,24 @@ public class SearchTest {
 
         // TEST PART A
         // write test code to search numArray for 38 and print result; should print 3
-
+        System.out.println(Search.linearSearch(38, numArray));
         // write test code to search numArray for 9 and print result; should print 2
-
+        System.out.println(Search.linearSearch(9, numArray));
         // write test code to search numArray for 5 and print result; should print -1
-
+        System.out.println(Search.linearSearch(5, numArray));
 
         // TEST PART B
         // use the same numArray and test the same three values as above, in the
         // same order, printing each result:  should print true, true, false
-
-
+        System.out.println(Search.linearSearch2(38, numArray));
+        // write test code to search numArray for 9 and print result; should print 2
+        System.out.println(Search.linearSearch2(9, numArray));
+        // write test code to search numArray for 5 and print result; should print -1
+        System.out.println(Search.linearSearch2(5, numArray));
 
 
         // TEST PARTS C & D -- UNCOMMENT TEST CODE
-        /*
+
         ArrayList<Integer> numArrayList = new ArrayList<Integer>(Arrays.asList(3, -2, 9, 38, -23, 9, 100));
         System.out.println("Tests of linear search Integer ArrayList:");
         System.out.println(Search.linearSearch(numArrayList, 3));
@@ -34,7 +37,7 @@ public class SearchTest {
         String[] arr1 = {"blue", "red", "purple", "green", "purple"};
         System.out.println(Search.linearSearch(arr1, "purple"));
         System.out.println(Search.linearSearch(arr1, "pink"));
-         */
+
 
         // TEST PART E -- UNCOMMENT TEST CODE
         /*
