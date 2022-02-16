@@ -38,7 +38,7 @@ public class Search {
     // at which the target is found, or return -1 if target is not found
     // BE SURE TO USE EARLY RETURN
 
-    public static int linearSearch(ArrayList<Integer> numArray, int target) {
+    public static int linearSearch(ArrayList<Integer> numArray, Integer target) {
         for (int i = 0; i < numArray.size(); i++) {
             if (numArray.get(i) == target) {
                 return i;
@@ -54,7 +54,14 @@ public class Search {
     // or return -1 if target is not found
     // BE SURE TO USE EARLY RETURN
 
-
+    public static int linearSearch(String[] strArray, String target) {
+        for (int i = 0; i < strArray.length; i++) {
+            if (strArray[i].equals(target)) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
@@ -62,7 +69,20 @@ public class Search {
     // target int, and return the LAST index at which the target is found,
     // or return -1 if target is not found
 
-
+    public static int linearSearchLast(int[] intArray, int target) {
+//        int lastIndex = -1;
+//        for (int i = 0; i < intArray.length; i++) {
+//            if (intArray[i] == target) {
+//                lastIndex = i;
+//            }
+//        }
+        for (int i = intArray.length - 1; i >= 0; i--) {
+            if (intArray[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
@@ -71,7 +91,25 @@ public class Search {
     // of Integers and a target int.  Each method should return the NUMBER OF TIMES
     // the target appears in the array/ArrayList.
 
+    public static int linearSearchCount(int[] intArray, int target) {
+        int counter = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] == target) {
+                counter++;
+            }
+        }
+        return counter;
+    }
 
+    public static int linearSearchCount(ArrayList<Integer> intArray, int target) {
+        int counter = 0;
+        for (int i = 0; i < intArray.size(); i++) {
+            if (intArray.get(i) == target) {
+                counter++;
+            }
+        }
+        return counter;
+    }
 
 
 }
